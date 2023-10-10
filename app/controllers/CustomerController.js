@@ -1,6 +1,11 @@
 const TokenService = require('../services/TokenService.js');
 const ApiService = require('../services/ApiService.js');
 
+
+/* This is the controller responsible for handling 
+incoming requests and responding with customer data.
+ It will call the ApiService to fetch data and return it to the frontend. */
+ 
 class CustomerController {
   async getCustomerData(req, res) {
     try {
